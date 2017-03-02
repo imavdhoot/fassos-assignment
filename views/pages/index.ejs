@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include ../partials/header.ejs %>
+</head>
+
+<body>
+
+  <% include ../partials/nav.ejs %>
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <a href="/" class="lang-logo"><img src="/faasos.png"></a>
+    <h3>You are being watched</h3>
+    <p>Out there so many eyes on you that spies on you every hour of every day. This app designed the to keep look on those eyes. Ordinary people, people like you considered this "irrelevant". You'll never find them... but do not worry we'll find them for you</p>
+    <p>This is a sample Node application deployed to Heroku. Upload a log file - to detect attack on your system.</p>
+    <form action="/analyze" method="post" enctype="multipart/form-data">
+      <input type="file" name="logFile" required class="btn btn-lg btn-primary"><br>
+      <input type="text" class="form-control" name="logSignature" required placeholder="Please enter log file description "/>
+      <br>
+      <button type="submit" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-search"></span> Analyze log file</button>
+    </form>
+  </div>
+</div>
+<div class="container">
+  <div class="alert alert-info text-center" role="alert" id='analyzedResult'>
+    <% if(result) {
+      result.forEach(function(res){ %>
+      <%= res %> <br>
+      <%});
+    } else {%>
+      "We'll analyze your logs and get back to you in a minute"
+     <% } %> 
+  </div>
+  <hr>
+  
+  </div> <!-- row -->
+</div>
+
+
+</body>
+</html>

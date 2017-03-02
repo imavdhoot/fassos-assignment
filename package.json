@@ -1,0 +1,29 @@
+{
+  "name": "avdhoot-faasos-assignment",
+  "version": "0.2.5",
+  "description": "A sample Node.js app using Express 4",
+  "engines": {
+    "node": "5.9.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "ejs": "2.4.1",
+    "express": "4.13.3",
+    "body-parser": "1.10.2",
+    "multer": "0.1.7",
+    "ip2country": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/imavdhoot/fassos-assignment.git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}

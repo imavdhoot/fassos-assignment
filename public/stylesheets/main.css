@@ -1,0 +1,32 @@
+.jumbotron {
+  background: #000000;
+  background-image: url('/computer-network.jpg');
+  color: white;
+  padding-bottom: 80px; }
+  .jumbotron .btn-primary {
+    background: #0099cc;
+    border-color: #0099cc; }
+    .jumbotron .btn-primary:hover {
+      background: #000000; }
+  .jumbotron h3 {
+    color: #000000;
+  } 
+  .jumbotron p {
+    color: #000000;
+    max-width: 95%;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 1em auto 2em; }
+  .navbar + .jumbotron {
+    margin-top: -20px; }
+  .jumbotron .lang-logo {
+    display: block;
+    background: #FFFFFF;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border: 2px solid white; }
+    .jumbotron .lang-logo img {
+      max-width: 100%; }
